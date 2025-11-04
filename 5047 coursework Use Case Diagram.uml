@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_LaFzwKNnEfCOHLPmgRNfnw" name="5047 coursework">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_LhvT4KNnEfCOHLPmgRNfnw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_t2T3ILQMEfCMcauW76jOfQ" name="Student Member"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_vU5VALQMEfCMcauW76jOfQ" name="Society Leader"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_A_FCULQOEfCMcauW76jOfQ" name="Union Officer"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_CYvj8LQOEfCMcauW76jOfQ" name="USU Operator"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_nNL8ILQOEfCMcauW76jOfQ" name="Create Event">
+    <extend xmi:type="uml:Extend" xmi:id="_00CvMLQVEfCMcauW76jOfQ" extendedCase="_gGi0ILQPEfCMcauW76jOfQ" extensionLocation="_00MgMLQVEfCMcauW76jOfQ"/>
+    <include xmi:type="uml:Include" xmi:id="_FbtMYLQTEfCMcauW76jOfQ" addition="_bOYyYLQPEfCMcauW76jOfQ"/>
+    <include xmi:type="uml:Include" xmi:id="_XEdy0LQTEfCMcauW76jOfQ" addition="_qX_10LQPEfCMcauW76jOfQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_XusYYLQPEfCMcauW76jOfQ" name="Update Event">
+    <include xmi:type="uml:Include" xmi:id="_OKVJYLQTEfCMcauW76jOfQ" addition="_bOYyYLQPEfCMcauW76jOfQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_aIzqYLQPEfCMcauW76jOfQ" name="Cancel Event"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_bOYyYLQPEfCMcauW76jOfQ" name="Upload Promotion Materials"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_dGXAoLQPEfCMcauW76jOfQ" name="Manage Society Membership"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_gGi0ILQPEfCMcauW76jOfQ" name="Broadcast Messages to Members">
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_00MgMLQVEfCMcauW76jOfQ" name="ExtensionPoint1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_j3cS4LQPEfCMcauW76jOfQ" name="View Event Attendees"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_oRGawLQPEfCMcauW76jOfQ" name="Set Membership Approval"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_qX_10LQPEfCMcauW76jOfQ" name="Notify Union Officer"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_FgQxsLQSEfCMcauW76jOfQ"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_IM260LQSEfCMcauW76jOfQ"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Jz2GwLQSEfCMcauW76jOfQ"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_K-hxMLQSEfCMcauW76jOfQ"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Mx_58LQSEfCMcauW76jOfQ"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_N6i2YLQSEfCMcauW76jOfQ"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_OqJuYLQSEfCMcauW76jOfQ"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Pts2ELQSEfCMcauW76jOfQ"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_QlqY0LQSEfCMcauW76jOfQ"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_14HisLQSEfCMcauW76jOfQ"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_3o2ggLQSEfCMcauW76jOfQ"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_602icLQSEfCMcauW76jOfQ"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_9_w_QLQSEfCMcauW76jOfQ"/>
+</uml:Model>
