@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_R6OuwL14EfCUmdY547xwlA" name="Task 4 UML diagram">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_SEZXYL14EfCUmdY547xwlA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Component" xmi:id="_lLObAL78EfCUmdY547xwlA" name="Society Leader App">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_5q9hYMVZEfCDDOHvT9t6uQ" name="ValidateSociety" visibility="public" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_JrLvkMYREfCDDOHvT9t6uQ" name="GetMembers" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_RIrb4MYREfCDDOHvT9t6uQ" name="SaveEvent" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_TVXV4MYREfCDDOHvT9t6uQ" name="GetEventdetails" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_f5KNoMYREfCDDOHvT9t6uQ" name="Notify" aggregation="composite"/>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_RoMd8MVXEfCDDOHvT9t6uQ" name="PushNotification"/>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_2u2AcMVXEfCDDOHvT9t6uQ" name="Login"/>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_bnYSgMlKEfCeXP16CCB75w" name="Society Authentication"/>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_Ce7x8MlLEfCeXP16CCB75w" name="Society Data Sync"/>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_ht2FAMlLEfCeXP16CCB75w" name="ViewEvents"/>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_ug6u4MlLEfCeXP16CCB75w" name="EventMessageSync"/>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_9EDoMMlLEfCeXP16CCB75w" name="EventUpdateNotification"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_TG5_AMVUEfCDDOHvT9t6uQ" name="Society GUI">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_yOmPwMVUEfCDDOHvT9t6uQ" name="UserActions" visibility="public" aggregation="composite"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_W20e8MVXEfCDDOHvT9t6uQ" client="_TG5_AMVUEfCDDOHvT9t6uQ" supplier="_RoMd8MVXEfCDDOHvT9t6uQ" contract="_RoMd8MVXEfCDDOHvT9t6uQ"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_6ReZsMVXEfCDDOHvT9t6uQ" client="_TG5_AMVUEfCDDOHvT9t6uQ" supplier="_2u2AcMVXEfCDDOHvT9t6uQ" contract="_2u2AcMVXEfCDDOHvT9t6uQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_X3MeMMVUEfCDDOHvT9t6uQ" name="Login &amp; Society Account Manager">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_0mMZQMVUEfCDDOHvT9t6uQ" name="SocietyAccountSync" aggregation="composite"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_7q-jQMVXEfCDDOHvT9t6uQ" client="_X3MeMMVUEfCDDOHvT9t6uQ" supplier="_2u2AcMVXEfCDDOHvT9t6uQ" contract="_2u2AcMVXEfCDDOHvT9t6uQ"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_qqMxcMlKEfCeXP16CCB75w" client="_X3MeMMVUEfCDDOHvT9t6uQ" supplier="_bnYSgMlKEfCeXP16CCB75w" contract="_bnYSgMlKEfCeXP16CCB75w"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_Ou4goMlLEfCeXP16CCB75w" client="_X3MeMMVUEfCDDOHvT9t6uQ" supplier="_Ce7x8MlLEfCeXP16CCB75w" contract="_Ce7x8MlLEfCeXP16CCB75w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_bC6zUMVUEfCDDOHvT9t6uQ" name="Society Members Manager">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_2KI4QMVUEfCDDOHvT9t6uQ" name="MembersDetailsUpdate" visibility="public" aggregation="composite"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_QGz84MlLEfCeXP16CCB75w" client="_bC6zUMVUEfCDDOHvT9t6uQ" supplier="_Ce7x8MlLEfCeXP16CCB75w" contract="_Ce7x8MlLEfCeXP16CCB75w"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_l0-ScMlLEfCeXP16CCB75w" client="_bC6zUMVUEfCDDOHvT9t6uQ" supplier="_ht2FAMlLEfCeXP16CCB75w" contract="_ht2FAMlLEfCeXP16CCB75w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_dVHfcMVUEfCDDOHvT9t6uQ" name="Society Events Manager">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_3PevsMVUEfCDDOHvT9t6uQ" name="EventUpdates" visibility="public" aggregation="composite"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_uvADoMlKEfCeXP16CCB75w" client="_dVHfcMVUEfCDDOHvT9t6uQ" supplier="_bnYSgMlKEfCeXP16CCB75w" contract="_bnYSgMlKEfCeXP16CCB75w"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_mhgoUMlLEfCeXP16CCB75w" client="_dVHfcMVUEfCDDOHvT9t6uQ" supplier="_ht2FAMlLEfCeXP16CCB75w" contract="_ht2FAMlLEfCeXP16CCB75w"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_1sMCwMlLEfCeXP16CCB75w" client="_dVHfcMVUEfCDDOHvT9t6uQ" supplier="_ug6u4MlLEfCeXP16CCB75w" contract="_ug6u4MlLEfCeXP16CCB75w"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_Bqr1EMlMEfCeXP16CCB75w" client="_dVHfcMVUEfCDDOHvT9t6uQ" supplier="_9EDoMMlLEfCeXP16CCB75w" contract="_9EDoMMlLEfCeXP16CCB75w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_gmxdcMVUEfCDDOHvT9t6uQ" name="Message Sender">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_5in3AMVUEfCDDOHvT9t6uQ" name="SendMessage" aggregation="composite"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_2YP3gMlLEfCeXP16CCB75w" client="_gmxdcMVUEfCDDOHvT9t6uQ" supplier="_ug6u4MlLEfCeXP16CCB75w" contract="_ug6u4MlLEfCeXP16CCB75w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_ixUCYMVUEfCDDOHvT9t6uQ" name="Notification Manager">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_6pupAMVUEfCDDOHvT9t6uQ" name="SubscribeEvent" aggregation="composite"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_d3maEMVXEfCDDOHvT9t6uQ" client="_ixUCYMVUEfCDDOHvT9t6uQ" supplier="_RoMd8MVXEfCDDOHvT9t6uQ" contract="_RoMd8MVXEfCDDOHvT9t6uQ"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_FNcxMMlMEfCeXP16CCB75w" client="_ixUCYMVUEfCDDOHvT9t6uQ" supplier="_9EDoMMlLEfCeXP16CCB75w" contract="_9EDoMMlLEfCeXP16CCB75w"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_nBFwcL78EfCUmdY547xwlA" name="External System">
+    <packagedElement xmi:type="uml:Component" xmi:id="_Lt4REMVWEfCDDOHvT9t6uQ" name="USU Society Service">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_7Hml4MVWEfCDDOHvT9t6uQ" client="_Lt4REMVWEfCDDOHvT9t6uQ" supplier="_d91aYMVWEfCDDOHvT9t6uQ" contract="_d91aYMVWEfCDDOHvT9t6uQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_NetVgMVWEfCDDOHvT9t6uQ" name="USU Member Database">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_8NPYQMVWEfCDDOHvT9t6uQ" client="_NetVgMVWEfCDDOHvT9t6uQ" supplier="_fIDx0MVWEfCDDOHvT9t6uQ" contract="_fIDx0MVWEfCDDOHvT9t6uQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_PsDW0MVWEfCDDOHvT9t6uQ" name="USU Event Service">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_9zRh8MVWEfCDDOHvT9t6uQ" client="_PsDW0MVWEfCDDOHvT9t6uQ" supplier="_f_DEMMVWEfCDDOHvT9t6uQ" contract="_f_DEMMVWEfCDDOHvT9t6uQ"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="__2PfQMVWEfCDDOHvT9t6uQ" client="_PsDW0MVWEfCDDOHvT9t6uQ" supplier="_hOFDIMVWEfCDDOHvT9t6uQ" contract="_hOFDIMVWEfCDDOHvT9t6uQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_SA9YsMVWEfCDDOHvT9t6uQ" name="Notification Service">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="__Sf5AMVWEfCDDOHvT9t6uQ" client="_SA9YsMVWEfCDDOHvT9t6uQ" supplier="_kiPikMVWEfCDDOHvT9t6uQ" contract="_kiPikMVWEfCDDOHvT9t6uQ"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_d91aYMVWEfCDDOHvT9t6uQ" name="ValidateSociety"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_fIDx0MVWEfCDDOHvT9t6uQ" name="GetMembersDetails"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_f_DEMMVWEfCDDOHvT9t6uQ" name="SaveEvent"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_hOFDIMVWEfCDDOHvT9t6uQ" name="GetEventDetails"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_kiPikMVWEfCDDOHvT9t6uQ" name="SendNotification"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_M2LZEMVaEfCDDOHvT9t6uQ" name=""/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_YU_lwMVaEfCDDOHvT9t6uQ" client="_R6OuwL14EfCUmdY547xwlA" supplier="_R6OuwL14EfCUmdY547xwlA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_sZ76wMVaEfCDDOHvT9t6uQ" client="_M2LZEMVaEfCDDOHvT9t6uQ" supplier="_d91aYMVWEfCDDOHvT9t6uQ"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_qMbFwMlJEfCeXP16CCB75w" name=""/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_sTxMwMlJEfCeXP16CCB75w" client="_JrLvkMYREfCDDOHvT9t6uQ" supplier="_qMbFwMlJEfCeXP16CCB75w"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_53ZJ0MlJEfCeXP16CCB75w" client="_qMbFwMlJEfCeXP16CCB75w" supplier="_fIDx0MVWEfCDDOHvT9t6uQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_JEwE0MlKEfCeXP16CCB75w" client="_6pupAMVUEfCDDOHvT9t6uQ" supplier="_f5KNoMYREfCDDOHvT9t6uQ"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_Lrk9IMlKEfCeXP16CCB75w" name=""/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_NuiTYMlKEfCeXP16CCB75w" client="_R6OuwL14EfCUmdY547xwlA" supplier="_Lrk9IMlKEfCeXP16CCB75w"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_DqVGsMlOEfCeXP16CCB75w" name=""/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_F1RUQMlOEfCeXP16CCB75w" client="_RIrb4MYREfCDDOHvT9t6uQ" supplier="_R6OuwL14EfCUmdY547xwlA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_MygMIMlOEfCeXP16CCB75w" client="_3PevsMVUEfCDDOHvT9t6uQ" supplier="_RIrb4MYREfCDDOHvT9t6uQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_NkaxQMlOEfCeXP16CCB75w" client="_3PevsMVUEfCDDOHvT9t6uQ" supplier="_TVXV4MYREfCDDOHvT9t6uQ"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_N-lkwMlOEfCeXP16CCB75w" name=""/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_QLv_4MlOEfCeXP16CCB75w" client="_TVXV4MYREfCDDOHvT9t6uQ" supplier="_R6OuwL14EfCUmdY547xwlA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_SIuC4MlOEfCeXP16CCB75w" client="_N-lkwMlOEfCeXP16CCB75w" supplier="_hOFDIMVWEfCDDOHvT9t6uQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_8U4RMMlPEfCeXP16CCB75w" client="_2KI4QMVUEfCDDOHvT9t6uQ" supplier="_JrLvkMYREfCDDOHvT9t6uQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_DQibwMlQEfCeXP16CCB75w" client="_0mMZQMVUEfCDDOHvT9t6uQ" supplier="_5q9hYMVZEfCDDOHvT9t6uQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_aTrnQMlQEfCeXP16CCB75w" client="_DqVGsMlOEfCeXP16CCB75w" supplier="_f_DEMMVWEfCDDOHvT9t6uQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_cLigwMlQEfCeXP16CCB75w" client="_Lrk9IMlKEfCeXP16CCB75w" supplier="_kiPikMVWEfCDDOHvT9t6uQ"/>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_UvJHQMPXEfC4VtCH2VfByQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UvNYsMPXEfC4VtCH2VfByQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+</uml:Model>

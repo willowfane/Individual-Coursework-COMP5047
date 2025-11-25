@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_R6OuwL14EfCUmdY547xwlA" name="Task 4 UML diagram">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_SEZXYL14EfCUmdY547xwlA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Component" xmi:id="_lLObAL78EfCUmdY547xwlA" name="Society Leader App">
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_p_KJAMRrEfC4VtCH2VfByQ" name="Login"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_0OqGUMPQEfC4VtCH2VfByQ" name="Society GUI">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_sgmyEMRrEfC4VtCH2VfByQ" client="_0OqGUMPQEfC4VtCH2VfByQ" supplier="_p_KJAMRrEfC4VtCH2VfByQ" contract="_p_KJAMRrEfC4VtCH2VfByQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_25NoEMPQEfC4VtCH2VfByQ" name="Society Manager">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_MDYM0MPeEfC4VtCH2VfByQ" name="Port1" aggregation="composite"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_4iKi4MPQEfC4VtCH2VfByQ" name="Membership Manager">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_amqUQMPXEfC4VtCH2VfByQ" name="Port1" aggregation="composite"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_6NAUEMPQEfC4VtCH2VfByQ" name="Event Manager">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_NQvcAMPXEfC4VtCH2VfByQ" name="Port1" aggregation="composite"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_8chfoMPQEfC4VtCH2VfByQ" name="Messaging Service">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_OmK94MPXEfC4VtCH2VfByQ" name="Port1" aggregation="composite"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_-HWpwMPQEfC4VtCH2VfByQ" name="Database Manager"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_CeiscMPREfC4VtCH2VfByQ" name="Auth Manager">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_SJU7kMPXEfC4VtCH2VfByQ" name="Port1" aggregation="composite"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_nBFwcL78EfCUmdY547xwlA" name="External System">
+    <packagedElement xmi:type="uml:Component" xmi:id="_ax20cMPTEfC4VtCH2VfByQ" name="University System">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_tfEksMPXEfC4VtCH2VfByQ" name="Port1" aggregation="composite"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_HN89sMPYEfC4VtCH2VfByQ" client="_ax20cMPTEfC4VtCH2VfByQ" supplier="_eUjCoMPUEfC4VtCH2VfByQ" contract="_eUjCoMPUEfC4VtCH2VfByQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_c_cGUMPTEfC4VtCH2VfByQ" name="USU Platform">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_qFZ6MMPXEfC4VtCH2VfByQ" name="Port1" aggregation="composite"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_iF6eoMPYEfC4VtCH2VfByQ" client="_c_cGUMPTEfC4VtCH2VfByQ" supplier="_z6a-4MPUEfC4VtCH2VfByQ" contract="_z6a-4MPUEfC4VtCH2VfByQ"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_olRuwMPYEfC4VtCH2VfByQ" client="_c_cGUMPTEfC4VtCH2VfByQ" supplier="_2jrgIMPUEfC4VtCH2VfByQ" contract="_2jrgIMPUEfC4VtCH2VfByQ"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_uw-cAMPYEfC4VtCH2VfByQ" client="_c_cGUMPTEfC4VtCH2VfByQ" supplier="_42AIEMPUEfC4VtCH2VfByQ" contract="_42AIEMPUEfC4VtCH2VfByQ"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_YSY5oMPZEfC4VtCH2VfByQ" client="_c_cGUMPTEfC4VtCH2VfByQ" supplier="_-BeHYMPUEfC4VtCH2VfByQ" contract="_-BeHYMPUEfC4VtCH2VfByQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_eXEnoMPTEfC4VtCH2VfByQ" name="Event Monitor">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_sdsnQMPXEfC4VtCH2VfByQ" name="Port1" aggregation="composite"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_b5TV8MPZEfC4VtCH2VfByQ" client="_eXEnoMPTEfC4VtCH2VfByQ" supplier="_7y2TsMPUEfC4VtCH2VfByQ" contract="_7y2TsMPUEfC4VtCH2VfByQ"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_eUjCoMPUEfC4VtCH2VfByQ" name="CheckSocietyApproval"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_z6a-4MPUEfC4VtCH2VfByQ" name="ValidateCredentials"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_2jrgIMPUEfC4VtCH2VfByQ" name="FindStudentRecord"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_42AIEMPUEfC4VtCH2VfByQ" name="PublishEventPromotion"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_7y2TsMPUEfC4VtCH2VfByQ" name="RecieveEventUpdates"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_-BeHYMPUEfC4VtCH2VfByQ" name="SendMessageExternal"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_utlnAMRrEfC4VtCH2VfByQ" client="_p_KJAMRrEfC4VtCH2VfByQ" supplier="_25NoEMPQEfC4VtCH2VfByQ"/>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_UvJHQMPXEfC4VtCH2VfByQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UvNYsMPXEfC4VtCH2VfByQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+</uml:Model>
