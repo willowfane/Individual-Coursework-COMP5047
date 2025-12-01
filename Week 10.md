@@ -14,7 +14,9 @@ This week, i will try to complete all of the coursework or atleast task 4b and 5
 
 ## Issues Solved:
 - The UML component diagram is finally complete, now we need to conenct them all together for task 4b. 
--  One problem which i have encountered, is that i am not sure that my Papyrus and github was properly connected, and so it might not be able to have a version history. But hopefully Imraz can tell yo
+-  One problem which i have encountered, is that i am not sure that my Papyrus and github was properly connected, and so it might not be able to have a version history.
+-  I am struggling a lot with the Papyrus software, i keep losing some of my diagrams and unsure as to why.
+- We were struggling to connect the component diagrams as we had to all be present because it had to have been done on one computer.
 
 
 ## Reflection on Teamwork:
