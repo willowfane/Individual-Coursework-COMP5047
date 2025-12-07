@@ -11,5 +11,9 @@ Issues Solved:
 Ever since i connected my papyrus to the team github, the commits dont seem to be working. I spoke to the professor in the practical session today to address the issue. 
 However it still has not been resolved and we are unsure why the commits are failing.
 
+
 Reflection on Teamwork:
 The team has worked very well this week, with everyone coming in for an extra meeting to finish connecting everyone subsystems for the whoel system component diagram.
+
+
+This week we submitted our coursework.
